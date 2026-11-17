@@ -19,3 +19,16 @@ def test_multiply_zero():
 	result = multiply(10,0)
 	# Assert
 	assert result == 0
+
+import pytest
+
+@pytest.mark.parametrize("a, b, expected", [
+(2, 3, 5), (-2, -3, -5), (0, 0, 0),
+])
+
+def test_add_many(a, b, expected):
+	assert add(a, b) == expected
+
+def test_divide_by_zero():
+	with pytest.raises(ZeroDivisionError):
+		divide(5,0)
