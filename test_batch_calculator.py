@@ -6,21 +6,21 @@ import pytest
 def test_process_calculation(op, a, b):
 	if op == "add":
                 if a == "8.3":
-                        assert process_calculation(op, a, b) == ("OK", "12", "")
+                        assert process_calculation(op, a, b) == ("OK", 12.51, "")
                 else:
-                        assert process_calculation(op, a, b) == ("OK", "-6", "")
+                        assert process_calculation(op, a, b) == ("OK", -6, "")
 	if op == "sub":
 		if a == "15":
-			assert process_calculation(op, a, b) == ("OK", "13", "")
+			assert process_calculation(op, a, b) == ("OK", 13, "")
 		else:
 			assert process_calculation(op, a, b) == ("ERROR", "", "INVALID_NUMBER")
 	if op == "mul":
-		assert process_calculation(op, a, b) == ("OK", "15", "")
+		assert process_calculation(op, a, b) == ("OK", 15, "")
 	if op == "m  ul":
-                assert process_calculation(op, a, b) == ("OK", "24", "")
+                assert process_calculation(op, a, b) == ("OK", 24, "")
 	if op == "div":
 		if a == "16":
-			assert process_calculation(op, a, b) == ("OK", "4", "")
+			assert process_calculation(op, a, b) == ("OK", 4, "")
 		else:
 			assert process_calculation(op, a, b) == ("ERROR", "", "DIVISION_BY_ZERO")
 	if op == "ada":
