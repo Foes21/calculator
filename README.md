@@ -16,3 +16,11 @@ The program prints Result: followed by the answer.
 Test case: '6', '*', '7' should output '42.0'
 To terminate: Ctrl + C
 
+## Coursework declarations
+The following supplied files/directories have been used:
+ - data/
+ - batch_runner.py
+ - test_batch_runner.py
+ - EVIDENCE.md
+
+AI has not been used during the development of coursework features.
