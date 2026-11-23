@@ -9,7 +9,7 @@ def number_checker(test_val):
         return False
 
 def operation_checker(op_check):
-    if op_check != "add" and op_check != "sub" and op_check != "mul" and op_check != "div":
+    if op_check != "add" and op_check != "sub" and op_check != "mul" and op_check != "div" and op_check != "subtract" and op_check != "multiply" and op_check != "divide":
         return False
     else:
         return True
@@ -26,18 +26,18 @@ def process_calculation(operation, a_text, b_text):
         error_code = "UNKNOWN_OPERATION"
     elif number_checker(a_text) == False or number_checker(b_text) == False:
         error_code = "INVALID_NUMBER"
-    elif b_text == "0" and operation == "div":
+    elif b_text == "0" and (operation == "div" or operation == "divide"):
         error_code = "DIVISION_BY_ZERO"
     
     if error_code == "":
         status = "OK"
         if operation == "add":
             result = float(format(add(float(a_text),float(b_text)), ".3f"))
-        elif operation == "mul":
+        elif operation == "mul" or operation == "multiply":
             result = float(format(multiply(float(a_text),float(b_text)), ".3f"))
-        elif operation == "sub":
+        elif operation == "sub" or operation == "subtract":
             result = float(format(subtract(float(a_text),float(b_text)), ".3f"))
-        elif operation == "div":
+        elif operation == "div" or operation == "divide":
             result = float(format(divide(float(a_text),float(b_text)), ".3f"))
     else:
         status = "ERROR"
