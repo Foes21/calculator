@@ -2,27 +2,6 @@
 platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0 -- /opt/python-venv/sccm-4910/bin/python3
 cachedir: .pytest_cache
 rootdir: /home/howart34/h-drive/calculator
-<<<<<<< HEAD
-collecting ... collected 19 items
-
-test_batch_calculator.py::test_process_calculation[add-8.3-4.21] FAILED  [  5%]
-test_batch_calculator.py::test_process_calculation[sub-15-2] FAILED      [ 10%]
-test_batch_calculator.py::test_process_calculation[mul-3-5] FAILED       [ 15%]
-test_batch_calculator.py::test_process_calculation[div-16-4] FAILED      [ 21%]
-test_batch_calculator.py::test_process_calculation[ada-3-7] FAILED       [ 26%]
-test_batch_calculator.py::test_process_calculation[sub-e-6] FAILED       [ 31%]
-test_batch_calculator.py::test_process_calculation[m  ul- 8-3  ] FAILED  [ 36%]
-test_batch_calculator.py::test_process_calculation[div-3-0] FAILED       [ 42%]
-test_batch_calculator.py::test_process_calculation[add--2--4] FAILED     [ 47%]
-test_calculator.py::test_add PASSED                                      [ 52%]
-test_calculator.py::test_subtract PASSED                                 [ 57%]
-test_calculator.py::test_multiply PASSED                                 [ 63%]
-test_calculator.py::test_divide PASSED                                   [ 68%]
-test_calculator.py::test_circleArea PASSED                               [ 73%]
-test_calculator.py::test_multiply_zero PASSED                            [ 78%]
-test_calculator.py::test_add_many[2-3-5] PASSED                          [ 84%]
-test_calculator.py::test_add_many[-2--3--5] PASSED                       [ 89%]
-=======
 collecting ... collected 18 items
 
 test_batch_calculator.py::test_process_calculation[add-8.3-4.21] FAILED  [  5%]
@@ -41,7 +20,6 @@ test_calculator.py::test_divide PASSED                                   [ 72%]
 test_calculator.py::test_multiply_zero PASSED                            [ 77%]
 test_calculator.py::test_add_many[2-3-5] PASSED                          [ 83%]
 test_calculator.py::test_add_many[-2--3--5] PASSED                       [ 88%]
->>>>>>> ad024cff39cb080f1a0676d2fdb7bec61f686e7d
 test_calculator.py::test_add_many[0-0-0] PASSED                          [ 94%]
 test_calculator.py::test_divide_by_zero PASSED                           [100%]
 
@@ -64,21 +42,6 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 operation = 'add', a_text = '8.3', b_text = '4.21'
 
     def process_calculation(operation, a_text, b_text):
-<<<<<<< HEAD
-    
-        #Return (status, result, error_code) for one calculation.
-        #Inputs are strings. Trim whitespace and use the four imported lab functions.
-        #Success: ("OK", numeric_result, "").
-        #The error_code is empty on success because there is no error to report.
-        #Error: ("ERROR", "", error_code).
-        #Check errors in order: UNKNOWN_OPERATION, INVALID_NUMBER, DIVISION_BY_ZERO.
-        #See the brief for the full contract. You may add small helper functions.
-    
->       raise NotImplementedError("Complete process_calculation for the coursework")
-E       NotImplementedError: Complete process_calculation for the coursework
-
-batch_calculator.py:20: NotImplementedError
-=======
         """Return (status, result, error_code) for one calculation.
     
         Inputs are strings. Trim whitespace and use the four imported lab functions.
@@ -93,7 +56,6 @@ batch_calculator.py:20: NotImplementedError
 E       NotImplementedError: Complete process_calculation for the coursework
 
 batch_calculator.py:21: NotImplementedError
->>>>>>> ad024cff39cb080f1a0676d2fdb7bec61f686e7d
 ______________________ test_process_calculation[sub-15-2] ______________________
 
 op = 'sub', a = '15', b = '2'
@@ -117,21 +79,6 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 operation = 'sub', a_text = '15', b_text = '2'
 
     def process_calculation(operation, a_text, b_text):
-<<<<<<< HEAD
-    
-        #Return (status, result, error_code) for one calculation.
-        #Inputs are strings. Trim whitespace and use the four imported lab functions.
-        #Success: ("OK", numeric_result, "").
-        #The error_code is empty on success because there is no error to report.
-        #Error: ("ERROR", "", error_code).
-        #Check errors in order: UNKNOWN_OPERATION, INVALID_NUMBER, DIVISION_BY_ZERO.
-        #See the brief for the full contract. You may add small helper functions.
-    
->       raise NotImplementedError("Complete process_calculation for the coursework")
-E       NotImplementedError: Complete process_calculation for the coursework
-
-batch_calculator.py:20: NotImplementedError
-=======
         """Return (status, result, error_code) for one calculation.
     
         Inputs are strings. Trim whitespace and use the four imported lab functions.
@@ -146,7 +93,6 @@ batch_calculator.py:20: NotImplementedError
 E       NotImplementedError: Complete process_calculation for the coursework
 
 batch_calculator.py:21: NotImplementedError
->>>>>>> ad024cff39cb080f1a0676d2fdb7bec61f686e7d
 ______________________ test_process_calculation[mul-3-5] _______________________
 
 op = 'mul', a = '3', b = '5'
@@ -174,21 +120,6 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 operation = 'mul', a_text = '3', b_text = '5'
 
     def process_calculation(operation, a_text, b_text):
-<<<<<<< HEAD
-    
-        #Return (status, result, error_code) for one calculation.
-        #Inputs are strings. Trim whitespace and use the four imported lab functions.
-        #Success: ("OK", numeric_result, "").
-        #The error_code is empty on success because there is no error to report.
-        #Error: ("ERROR", "", error_code).
-        #Check errors in order: UNKNOWN_OPERATION, INVALID_NUMBER, DIVISION_BY_ZERO.
-        #See the brief for the full contract. You may add small helper functions.
-    
->       raise NotImplementedError("Complete process_calculation for the coursework")
-E       NotImplementedError: Complete process_calculation for the coursework
-
-batch_calculator.py:20: NotImplementedError
-=======
         """Return (status, result, error_code) for one calculation.
     
         Inputs are strings. Trim whitespace and use the four imported lab functions.
@@ -203,7 +134,6 @@ batch_calculator.py:20: NotImplementedError
 E       NotImplementedError: Complete process_calculation for the coursework
 
 batch_calculator.py:21: NotImplementedError
->>>>>>> ad024cff39cb080f1a0676d2fdb7bec61f686e7d
 ______________________ test_process_calculation[div-16-4] ______________________
 
 op = 'div', a = '16', b = '4'
@@ -236,21 +166,6 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 operation = 'div', a_text = '16', b_text = '4'
 
     def process_calculation(operation, a_text, b_text):
-<<<<<<< HEAD
-    
-        #Return (status, result, error_code) for one calculation.
-        #Inputs are strings. Trim whitespace and use the four imported lab functions.
-        #Success: ("OK", numeric_result, "").
-        #The error_code is empty on success because there is no error to report.
-        #Error: ("ERROR", "", error_code).
-        #Check errors in order: UNKNOWN_OPERATION, INVALID_NUMBER, DIVISION_BY_ZERO.
-        #See the brief for the full contract. You may add small helper functions.
-    
->       raise NotImplementedError("Complete process_calculation for the coursework")
-E       NotImplementedError: Complete process_calculation for the coursework
-
-batch_calculator.py:20: NotImplementedError
-=======
         """Return (status, result, error_code) for one calculation.
     
         Inputs are strings. Trim whitespace and use the four imported lab functions.
@@ -265,7 +180,6 @@ batch_calculator.py:20: NotImplementedError
 E       NotImplementedError: Complete process_calculation for the coursework
 
 batch_calculator.py:21: NotImplementedError
->>>>>>> ad024cff39cb080f1a0676d2fdb7bec61f686e7d
 ______________________ test_process_calculation[ada-3-7] _______________________
 
 op = 'ada', a = '3', b = '7'
@@ -302,21 +216,6 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 operation = 'ada', a_text = '3', b_text = '7'
 
     def process_calculation(operation, a_text, b_text):
-<<<<<<< HEAD
-    
-        #Return (status, result, error_code) for one calculation.
-        #Inputs are strings. Trim whitespace and use the four imported lab functions.
-        #Success: ("OK", numeric_result, "").
-        #The error_code is empty on success because there is no error to report.
-        #Error: ("ERROR", "", error_code).
-        #Check errors in order: UNKNOWN_OPERATION, INVALID_NUMBER, DIVISION_BY_ZERO.
-        #See the brief for the full contract. You may add small helper functions.
-    
->       raise NotImplementedError("Complete process_calculation for the coursework")
-E       NotImplementedError: Complete process_calculation for the coursework
-
-batch_calculator.py:20: NotImplementedError
-=======
         """Return (status, result, error_code) for one calculation.
     
         Inputs are strings. Trim whitespace and use the four imported lab functions.
@@ -331,7 +230,6 @@ batch_calculator.py:20: NotImplementedError
 E       NotImplementedError: Complete process_calculation for the coursework
 
 batch_calculator.py:21: NotImplementedError
->>>>>>> ad024cff39cb080f1a0676d2fdb7bec61f686e7d
 ______________________ test_process_calculation[sub-e-6] _______________________
 
 op = 'sub', a = 'e', b = '6'
@@ -357,21 +255,6 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 operation = 'sub', a_text = 'e', b_text = '6'
 
     def process_calculation(operation, a_text, b_text):
-<<<<<<< HEAD
-    
-        #Return (status, result, error_code) for one calculation.
-        #Inputs are strings. Trim whitespace and use the four imported lab functions.
-        #Success: ("OK", numeric_result, "").
-        #The error_code is empty on success because there is no error to report.
-        #Error: ("ERROR", "", error_code).
-        #Check errors in order: UNKNOWN_OPERATION, INVALID_NUMBER, DIVISION_BY_ZERO.
-        #See the brief for the full contract. You may add small helper functions.
-    
->       raise NotImplementedError("Complete process_calculation for the coursework")
-E       NotImplementedError: Complete process_calculation for the coursework
-
-batch_calculator.py:20: NotImplementedError
-=======
         """Return (status, result, error_code) for one calculation.
     
         Inputs are strings. Trim whitespace and use the four imported lab functions.
@@ -386,7 +269,6 @@ batch_calculator.py:20: NotImplementedError
 E       NotImplementedError: Complete process_calculation for the coursework
 
 batch_calculator.py:21: NotImplementedError
->>>>>>> ad024cff39cb080f1a0676d2fdb7bec61f686e7d
 ____________________ test_process_calculation[m  ul- 8-3  ] ____________________
 
 op = 'm  ul', a = ' 8', b = '3  '
@@ -416,21 +298,6 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 operation = 'm  ul', a_text = ' 8', b_text = '3  '
 
     def process_calculation(operation, a_text, b_text):
-<<<<<<< HEAD
-    
-        #Return (status, result, error_code) for one calculation.
-        #Inputs are strings. Trim whitespace and use the four imported lab functions.
-        #Success: ("OK", numeric_result, "").
-        #The error_code is empty on success because there is no error to report.
-        #Error: ("ERROR", "", error_code).
-        #Check errors in order: UNKNOWN_OPERATION, INVALID_NUMBER, DIVISION_BY_ZERO.
-        #See the brief for the full contract. You may add small helper functions.
-    
->       raise NotImplementedError("Complete process_calculation for the coursework")
-E       NotImplementedError: Complete process_calculation for the coursework
-
-batch_calculator.py:20: NotImplementedError
-=======
         """Return (status, result, error_code) for one calculation.
     
         Inputs are strings. Trim whitespace and use the four imported lab functions.
@@ -445,7 +312,6 @@ batch_calculator.py:20: NotImplementedError
 E       NotImplementedError: Complete process_calculation for the coursework
 
 batch_calculator.py:21: NotImplementedError
->>>>>>> ad024cff39cb080f1a0676d2fdb7bec61f686e7d
 ______________________ test_process_calculation[div-3-0] _______________________
 
 op = 'div', a = '3', b = '0'
@@ -480,21 +346,6 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 operation = 'div', a_text = '3', b_text = '0'
 
     def process_calculation(operation, a_text, b_text):
-<<<<<<< HEAD
-    
-        #Return (status, result, error_code) for one calculation.
-        #Inputs are strings. Trim whitespace and use the four imported lab functions.
-        #Success: ("OK", numeric_result, "").
-        #The error_code is empty on success because there is no error to report.
-        #Error: ("ERROR", "", error_code).
-        #Check errors in order: UNKNOWN_OPERATION, INVALID_NUMBER, DIVISION_BY_ZERO.
-        #See the brief for the full contract. You may add small helper functions.
-    
->       raise NotImplementedError("Complete process_calculation for the coursework")
-E       NotImplementedError: Complete process_calculation for the coursework
-
-batch_calculator.py:20: NotImplementedError
-=======
         """Return (status, result, error_code) for one calculation.
     
         Inputs are strings. Trim whitespace and use the four imported lab functions.
@@ -509,7 +360,6 @@ batch_calculator.py:20: NotImplementedError
 E       NotImplementedError: Complete process_calculation for the coursework
 
 batch_calculator.py:21: NotImplementedError
->>>>>>> ad024cff39cb080f1a0676d2fdb7bec61f686e7d
 _____________________ test_process_calculation[add--2--4] ______________________
 
 op = 'add', a = '-2', b = '-4'
@@ -530,21 +380,6 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 operation = 'add', a_text = '-2', b_text = '-4'
 
     def process_calculation(operation, a_text, b_text):
-<<<<<<< HEAD
-    
-        #Return (status, result, error_code) for one calculation.
-        #Inputs are strings. Trim whitespace and use the four imported lab functions.
-        #Success: ("OK", numeric_result, "").
-        #The error_code is empty on success because there is no error to report.
-        #Error: ("ERROR", "", error_code).
-        #Check errors in order: UNKNOWN_OPERATION, INVALID_NUMBER, DIVISION_BY_ZERO.
-        #See the brief for the full contract. You may add small helper functions.
-    
->       raise NotImplementedError("Complete process_calculation for the coursework")
-E       NotImplementedError: Complete process_calculation for the coursework
-
-batch_calculator.py:20: NotImplementedError
-=======
         """Return (status, result, error_code) for one calculation.
     
         Inputs are strings. Trim whitespace and use the four imported lab functions.
@@ -559,7 +394,6 @@ batch_calculator.py:20: NotImplementedError
 E       NotImplementedError: Complete process_calculation for the coursework
 
 batch_calculator.py:21: NotImplementedError
->>>>>>> ad024cff39cb080f1a0676d2fdb7bec61f686e7d
 =========================== short test summary info ============================
 FAILED test_batch_calculator.py::test_process_calculation[add-8.3-4.21] - Not...
 FAILED test_batch_calculator.py::test_process_calculation[sub-15-2] - NotImpl...
@@ -570,8 +404,4 @@ FAILED test_batch_calculator.py::test_process_calculation[sub-e-6] - NotImple...
 FAILED test_batch_calculator.py::test_process_calculation[m  ul- 8-3  ] - Not...
 FAILED test_batch_calculator.py::test_process_calculation[div-3-0] - NotImple...
 FAILED test_batch_calculator.py::test_process_calculation[add--2--4] - NotImp...
-<<<<<<< HEAD
-========================= 9 failed, 10 passed in 0.17s =========================
-=======
 ========================= 9 failed, 9 passed in 0.23s ==========================
->>>>>>> ad024cff39cb080f1a0676d2fdb7bec61f686e7d
