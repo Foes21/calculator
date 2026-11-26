@@ -1,0 +1,31 @@
+Run python -m pytest -v
+============================= test session starts ==============================
+platform linux -- Python 3.11.18, pytest-9.2.0, pluggy-1.7.0 -- /opt/hostedtoolcache/Python/3.11.18/x64/bin/python
+cachedir: .pytest_cache
+rootdir: /home/runner/work/calculator/calculator
+collecting ... collected 18 items
+
+test_batch_calculator.py::test_process_calculation[add-8.3-4.21] PASSED  [  5%]
+test_batch_calculator.py::test_process_calculation[sub-15-2] PASSED      [ 11%]
+test_batch_calculator.py::test_process_calculation[mul-3-5] PASSED       [ 16%]
+test_batch_calculator.py::test_process_calculation[div-16-4] PASSED      [ 22%]
+test_batch_calculator.py::test_process_calculation[ada-3-7] PASSED       [ 27%]
+test_batch_calculator.py::test_process_calculation[sub-e-6] PASSED       [ 33%]
+test_batch_calculator.py::test_process_calculation[m  ul- 8-3  ] PASSED  [ 38%]
+test_batch_calculator.py::test_process_calculation[div-3-0] PASSED       [ 44%]
+test_batch_calculator.py::test_process_calculation[add--2--4] PASSED     [ 50%]
+test_calculator.py::test_add PASSED                                      [ 55%]
+test_calculator.py::test_subtract PASSED                                 [ 61%]
+test_calculator.py::test_multiply PASSED                                 [ 66%]
+test_calculator.py::test_divide PASSED                                   [ 72%]
+test_calculator.py::test_multiply_zero PASSED                            [ 77%]
+test_calculator.py::test_add_many[2-3-5] PASSED                          [ 83%]
+test_calculator.py::test_add_many[-2--3--5] PASSED                       [ 88%]
+test_calculator.py::test_add_many[0-0-0] PASSED                          [ 94%]
+test_calculator.py::test_divide_by_zero PASSED                           [100%]
+
+============================== 18 passed in 0.11s ==============================
+
+All tests are passing, as the contents of batch_calculator are now complete, and returning no errors.
+
+Run URL: https://github.com/Foes21/calculator/actions/runs/45034118790

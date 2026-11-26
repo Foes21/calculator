@@ -1,0 +1,78 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.18, pytest-9.2.0, pluggy-1.7.0 -- /opt/hostedtoolcache/Python/3.11.18/x64/bin/python
+cachedir: .pytest_cache
+rootdir: /home/runner/work/calculator/calculator
+collecting ... collected 18 items
+
+test_batch_calculator.py::test_process_calculation[add-8.3-4.21] FAILED  [  5%]
+test_batch_calculator.py::test_process_calculation[sub-15-2] FAILED      [ 11%]
+test_batch_calculator.py::test_process_calculation[mul-3-5] FAILED       [ 16%]
+test_batch_calculator.py::test_process_calculation[div-16-4] FAILED      [ 22%]
+test_batch_calculator.py::test_process_calculation[ada-3-7] FAILED       [ 27%]
+test_batch_calculator.py::test_process_calculation[sub-e-6] FAILED       [ 33%]
+test_batch_calculator.py::test_process_calculation[m  ul- 8-3  ] FAILED  [ 38%]
+test_batch_calculator.py::test_process_calculation[div-3-0] FAILED       [ 44%]
+test_batch_calculator.py::test_process_calculation[add--2--4] FAILED     [ 50%]
+test_calculator.py::test_add PASSED                                      [ 55%]
+test_calculator.py::test_subtract PASSED                                 [ 61%]
+test_calculator.py::test_multiply PASSED                                 [ 66%]
+test_calculator.py::test_divide PASSED                                   [ 72%]
+test_calculator.py::test_multiply_zero PASSED                            [ 77%]
+test_calculator.py::test_add_many[2-3-5] PASSED                          [ 83%]
+test_calculator.py::test_add_many[-2--3--5] PASSED                       [ 88%]
+test_calculator.py::test_add_many[0-0-0] PASSED                          [ 94%]
+test_calculator.py::test_divide_by_zero PASSED                           [100%]
+
+=================================== FAILURES ===================================
+____________________ test_process_calculation[add-8.3-4.21] ____________________
+
+op = 'add', a = '8.3', b = '4.21'
+
+    @pytest.mark.parametrize("op, a, b", [ ("add", "8.3", "4.21"), ("sub", "15", "2"), ("mul", "3", "5"), ("div", "16", "4"), ("ada", "3", "7"), ("sub", "e", "6"), ("m  ul", " 8", "3  "), ("div", "3", "0"), ("add", "-2", "-4"),])
+    
+    def test_process_calculation(op, a, b):
+    	if op == "add":
+                    if a == "8.3":
+>                           assert process_calculation(op, a, b) == ("OK", "12", "")
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_batch_calculator.py:9: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+operation = 'add', a_text = '8.3', b_text = '4.21'
+
+    def process_calculation(operation, a_text, b_text):
+        """Return (status, result, error_code) for one calculation.
+    
+        Inputs are strings. Trim whitespace and use the four imported lab functions.
+        Success: ("OK", numeric_result, "").
+        The error_code is empty on success because there is no error to report.
+        Error: ("ERROR", "", error_code).
+    
+        Check errors in order: UNKNOWN_OPERATION, INVALID_NUMBER, DIVISION_BY_ZERO.
+        See the brief for the full contract. You may add small helper functions.
+        """
+>       raise NotImplementedError("Complete process_calculation for the coursework")
+E       NotImplementedError: Complete process_calculation for the coursework
+
+batch_calculator.py:21: NotImplementedError
+
+...
+
+=========================== short test summary info ============================
+FAILED test_batch_calculator.py::test_process_calculation[add-8.3-4.21] - NotImplementedError: Complete process_calculation for the coursework
+FAILED test_batch_calculator.py::test_process_calculation[sub-15-2] - NotImplementedError: Complete process_calculation for the coursework
+FAILED test_batch_calculator.py::test_process_calculation[mul-3-5] - NotImplementedError: Complete process_calculation for the coursework
+FAILED test_batch_calculator.py::test_process_calculation[div-16-4] - NotImplementedError: Complete process_calculation for the coursework
+FAILED test_batch_calculator.py::test_process_calculation[ada-3-7] - NotImplementedError: Complete process_calculation for the coursework
+FAILED test_batch_calculator.py::test_process_calculation[sub-e-6] - NotImplementedError: Complete process_calculation for the coursework
+FAILED test_batch_calculator.py::test_process_calculation[m  ul- 8-3  ] - NotImplementedError: Complete process_calculation for the coursework
+FAILED test_batch_calculator.py::test_process_calculation[div-3-0] - NotImplementedError: Complete process_calculation for the coursework
+FAILED test_batch_calculator.py::test_process_calculation[add--2--4] - NotImplementedError: Complete process_calculation for the coursework
+========================= 9 failed, 9 passed in 0.07s ==========================
+Error: Process completed with exit code 1.
+
+All of the tests included in the new commit, as part of test_batch_calculator, are all returning NotImplementedError, as the contents of the file have not yet been created.
+
+
+run URL: https://github.com/Foes21/calculator/actions/runs/44952232475

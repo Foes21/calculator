@@ -16,39 +16,76 @@ submit the final CI run as a separate PDF or screenshot.
 
 ## 1. Starting point and Git review
 
+<<<<<<< HEAD
 - Starting commit: d2ecc485ea64599ab8b9ccd02c5e3754b74e51e0
+=======
+- Starting commit: 86939b890b39e7b787a445ecfb0abed550070199
+>>>>>>> ad024cff39cb080f1a0676d2fdb7bec61f686e7d
 
 - Reused lab files, tests and examples: The four arithmetic functions, 
 interactive mode, existing tests and workflow examples will all be continued 
 from the progress made in the labs through weeks 1-5, and will be expanded upon
 through both my own additions and additional lab work.
 
-- Feature branch and PR: Most recent Pr - Add tests; 
+- Feature branch and PR: Most recent Pr - Broken multiplication; 
 https://github.com/Foes20/calculator/pulls?q=is%3Apr - shown in InitialPulls.png
 
-- Self-review: [what you checked in the diff and the outcome
-The desired outcome will allow the user to input a small file of calculations, which will all be processed and return the correct values.
+- Self-review: Before beginning with the new test cases, I checked the diff of the most recent 
+commits, which displayed all changes made to the current state of the
+calculator. From this, I determined that the additions I make through this 
+coursework will allow a small file of calculations to be input, processed
+and returned with the correct values.
 
 ## 2. Test failure, diagnosis and fix
 
 Plan this before fixing the chosen missing requirement or defect. An initially
 missing feature is acceptable; retain the test in the final suite.
 
-- Requirement and retained test: R5; test file/function]
-- Expected result and actual failure: [your explanation]
-- Before/fix commits: [hashes]
-- Failing/passing local runs: [commands, outcomes and saved log paths]
-- Failing/passing CI runs: [URLs, matching commit hashes and saved files in evidence/]
-- CI diagnosis: [event, runner, job, failed step and useful log message]
-- Cause and implementation fix: [explain what changed and why]
+- Requirement and retained test: R5/R7; Executing test_batch_calculator.py to 
+ensure that batch_calculator.py is able to process data correctly, returning the
+appropriate failure message or calculation outcome.
 
-- Requirement and retained test: R7; test file/function]
-- Expected result and actual failure: [your explanation]
-- Before/fix commits: [hashes]
-- Failing/passing local runs: [commands, outcomes and saved log paths]
-- Failing/passing CI runs: [URLs, matching commit hashes and saved files in evidence/]
-- CI diagnosis: [event, runner, job, failed step and useful log message]
-- Cause and implementation fix: [explain what changed and why]
+- Expected result and actual failure: When a valid operator and operand are 
+entered, the values should be combined and returned to the function that called
+batch_calculator. If invalid data is entered, an error should be returned 
+instead. However, all entered data returns NotImplementedError, as the contents
+of batch_calculator has not yet been written, thus always returns the same error.
+
+- Before/fix commits: 
+    Before commit: e70416f8c72c545012e2ecec9ad2a0cd9f0e7e17
+    Fixed commit: 3af2479ddcd2d091b87fc17897afaf0404e01c80
+    
+- Failing/passing local runs:
+    Failing local run: python3 -m pytest -v, returns NotImplementedError for each
+    of the tests described in test_batch_calculator, with original calcualtor 
+    tests still passing successfully; log details stored in
+    evidence/local-before.txt
+    Passing local run: python3 -m pytest -v, returns passed for each of the new 
+    tests and the original tests; log details stored in
+    evidence/local-after.txt
+    
+- Failing/passing CI runs:
+    Failing CI run: https://github.com/Foes21/calculator/actions/runs/44952232475
+    Commit e70416f, log details found in evidence/ci-before.txt and 
+    evidence/ci-before.png
+    Passing CI run: https://github.com/Foes21/calculator/actions/runs/45034118790
+    Commit 3af2479, log details found in evidence/ci-after.txt and
+    evidence/ci-before.png
+    
+- CI diagnosis: The event was initiated by attempting to push the contents of 
+test_batch_runner and batch_runner to the coursework branch, along with the 
+additional provided files, causing the new CI workflow to start. This executed on
+a Linux platform using Python 3.11, and contained the tasks dictated through
+ci.yml. Upon reaching the 'tests' phase, a failure occurred with each of the new 
+tests in test_batch_calculator, returning the error message 
+'NotImplementedError: Complete process_calculation for the coursework'
+
+- Cause and implementation fix: By completing the contents of batch_calculator,
+all of the operations were able to be performed correctly, including returning 
+the appropriate error message, if the inputs were not valid. This allowed the 
+assertions in test_batch_calculator to be marked as successful, thus allowing 
+all tests to pass.
+
 
 ## 3. Repeatable checks and local hook
 
