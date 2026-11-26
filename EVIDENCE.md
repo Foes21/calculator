@@ -23,8 +23,11 @@ interactive mode, existing tests and workflow examples will all be continued
 from the progress made in the labs through weeks 1-5, and will be expanded upon
 through both my own additions and additional lab work.
 
-- Feature branch and PR: Most recent Pr - Broken multiplication; 
-https://github.com/Foes20/calculator/pulls?q=is%3Apr - shown in InitialPulls.png
+- Feature branch and PR: 
+  - Before coursework: Most recent PR - Broken multiplication; 
+https://github.com/Foes20/calculator/pulls?q=is%3Apr - shown in initial-pulls.png
+  - Mid coursework: Most recent PR - Coursework: Steps 1-4;
+https://github.com/Foes21/calculator/pull/4 - shown in coursework-pull.png
 
 - Self-review: Before beginning with the new test cases, I checked the diff of the most recent 
 commits, which displayed all changes made to the current state of the
@@ -82,6 +85,7 @@ the appropriate error message, if the inputs were not valid. This allowed the
 assertions in test_batch_calculator to be marked as successful, thus allowing 
 all tests to pass.
 
+
 ## 3. Repeatable checks and local hook
 
 - Common check script: [path and invocation used locally and in CI]
@@ -98,7 +102,13 @@ commit attempt has no new commit hash; identify its base commit and changes.
 - Native normal/mixed runs: [commands and saved output/diagnostic paths]
 - Container build/run commands and image tag: [README reference or commands]
 - Input/output transfer: [how files enter and leave the container]
-- Mixed-run interpretation: [summary, one error and later successful records]
+
+- Mixed-run interpretation: When initially testing mixed.csv, 7 errors occcurred,
+more than the expected 4 errors, due to the way that operations had been named,
+since my test_batch_calculator.py used abbreviated terms, whilst the mixed file
+did not. By allowing both short and full operation names to be used, the tests
+were able to pass as intended, with 4 failures and successes.
+
 - Python version and Docker environment: [what you used]
 
 ## 5. Container checks in CI during development

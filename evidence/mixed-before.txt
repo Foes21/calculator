@@ -1,0 +1,11 @@
+Record 2: UNKNOWN_OPERATION
+Record 3: UNKNOWN_OPERATION
+Record 4: UNKNOWN_OPERATION
+Record 5: INVALID_NUMBER
+Record 6: UNKNOWN_OPERATION
+Record 7: UNKNOWN_OPERATION
+Record 8: UNKNOWN_OPERATION
+
+Processed 8 records: 1 succeeded, 7 failed.
+
+Exit with error code 1
