@@ -1,5 +1,5 @@
 FROM docker.io/library/python:3.11-slim
-WOKRDIR /app
+WORKDIR /app
 COPY calculator.py .
 COPY math_exam.py .
 COPY exam.uraz .
